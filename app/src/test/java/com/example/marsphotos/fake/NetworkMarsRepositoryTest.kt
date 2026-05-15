@@ -1,10 +1,7 @@
 package com.example.marsphotos.fake
 
 import com.example.marsphotos.data.NetworkMarsPhotosRepository
-import com.example.marsphotos.ui.screens.MarsUiState
-import com.example.marsphotos.ui.screens.MarsViewModel
 import junit.framework.TestCase.assertEquals
-import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 

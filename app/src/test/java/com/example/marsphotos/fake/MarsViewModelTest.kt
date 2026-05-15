@@ -18,7 +18,9 @@ class MarsViewModelTest {
             marsPhotosRepository = FakeNetworkMarsPhotosRepository()
         )
         marsViewModel.getMarsPhotos()
-        assertEquals(MarsUiState.Success("Success: ${FakeDataSource.photosList.size} Mars photos retrieved"),
-            marsViewModel.marsUiState)
+        assertEquals(
+            MarsUiState.Success(FakeDataSource.photosList),
+            marsViewModel.marsUiState
+        )
     }
 }
